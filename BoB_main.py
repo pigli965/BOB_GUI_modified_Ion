@@ -5,6 +5,8 @@ import os
 from address_dictionar import *
 #function for buttons
 
+
+
 alist = [1,2,4,8,16,32,64,128]
 blist = [1,2,4,8,16,32,64,128] 
 
@@ -120,7 +122,7 @@ def onoff16():
     elif button16.cget("text") == 'ON':
         button16.configure(text='OFF', fg='Red', relief=RAISED)
         blist[7]=128
-
+        
 
 def onoffR():   
         a=sum(alist)
@@ -131,7 +133,8 @@ def onoffR():
 #create window object 
 root =Tk()
 root.title(" Automate BoB ")
-root.geometry('900x300')
+root.geometry('950x300')
+
 
 #canvas 
 canvas = Canvas(root, height = 100, width = 700, bg = '#066450')
@@ -140,124 +143,130 @@ canvas.place()
 #relay lables
 re1_text = StringVar()
 re1_label = Label(root, text = 'Relay 1', font = ('bold', 12),padx = 20)
-re1_label.grid(row=1, column = 1)
+re1_label.grid(row=3, column = 1)
 
 re2_text = StringVar()
 re2_label = Label(root, text = 'Relay 2', font = ('bold', 12),padx = 20)
-re2_label.grid(row=1, column = 2)
+re2_label.grid(row=3, column = 2)
 
 re3_text = StringVar()
 re3_label = Label(root, text = 'Relay 3', font = ('bold', 12),padx = 20)
-re3_label.grid(row=1, column = 3)
+re3_label.grid(row=3, column = 3)
 
 re4_text = StringVar()
 re4_label = Label(root, text = 'Relay 4', font = ('bold', 12),padx = 20)
-re4_label.grid(row=1, column = 4)
+re4_label.grid(row=3, column = 4)
 
 re5_text = StringVar()
 re5_label = Label(root, text = 'Relay 5', font = ('bold', 12),padx = 20)
-re5_label.grid(row=1, column = 5)
+re5_label.grid(row=3, column = 5)
 
 re6_text = StringVar()
 re6_label = Label(root, text = 'Relay 6', font = ('bold', 12),padx = 20)
-re6_label.grid(row=1, column = 6)
+re6_label.grid(row=3, column = 6)
 
 re7_text = StringVar()
 re7_label = Label(root, text = 'Relay 7', font = ('bold', 12),padx = 20)
-re7_label.grid(row=1, column = 7)
+re7_label.grid(row=3, column = 7)
 
 re8_text = StringVar()
 re8_label = Label(root, text = 'Relay 8', font = ('bold', 12),padx = 20)
-re8_label.grid(row=1, column = 8)
+re8_label.grid(row=3, column = 8)
 
 re9_text = StringVar()
 re9_label = Label(root, text = 'Relay 9', font = ('bold', 12),padx = 20, pady =20)
-re9_label.grid(row=5, column = 1)
+re9_label.grid(row=7, column = 1)
 
 re10_text = StringVar()
 re10_label = Label(root, text = 'Relay 10', font = ('bold', 12),padx = 20, pady =20)
-re10_label.grid(row=5, column = 2)
+re10_label.grid(row=7, column = 2)
 
 re11_text = StringVar()
 re11_label = Label(root, text = 'Relay 11', font = ('bold', 12),padx = 20, pady =20)
-re11_label.grid(row=5, column = 3)
+re11_label.grid(row=7, column = 3)
 
 re12_text = StringVar()
 re12_label = Label(root, text = 'Relay 12', font = ('bold', 12),padx = 20, pady =20)
-re12_label.grid(row=5, column = 4)
+re12_label.grid(row=7, column = 4)
 
 re13_text = StringVar()
 re13_label = Label(root, text = 'Relay 13', font = ('bold', 12),padx = 20, pady =20)
-re13_label.grid(row=5, column = 5)
+re13_label.grid(row=7, column = 5)
 
 re14_text = StringVar()
 re14_label = Label(root, text = 'Relay 14', font = ('bold', 12),padx = 20, pady =20)
-re14_label.grid(row=5, column = 6)
+re14_label.grid(row=7, column = 6)
 
 re15_text = StringVar()
 re15_label = Label(root, text = 'Relay 15', font = ('bold', 12),padx = 20,pady =20)
-re15_label.grid(row=5, column = 7)
+re15_label.grid(row=7, column = 7)
 
 re16_text = StringVar()
 re16_label = Label(root, text = 'Relay 16', font = ('bold', 12),padx = 20, pady =20)
-re16_label.grid(row=5, column = 8)
+re16_label.grid(row=7, column = 8)
 
 
 
 #buttons
 button1 = Button(root, text='OFF', command=onoff1, fg='Red')
-button1.grid(row=2, column=1, pady=5, padx=5)
+button1.grid(row=4, column=1, pady=5, padx=5)
 
 button2 = Button(root, text='OFF', command=onoff2, fg='Red')
-button2.grid(row=2, column=2, pady=5, padx=5)
+button2.grid(row=4, column=2, pady=5, padx=5)
 
 button3 = Button(root, text='OFF', command=onoff3, fg='Red')
-button3.grid(row=2, column=3, pady=5, padx=5)
+button3.grid(row=4, column=3, pady=5, padx=5)
 
 button4 = Button(root, text='OFF', command=onoff4, fg='Red')
-button4.grid(row=2, column=4, pady=5, padx=5)
+button4.grid(row=4, column=4, pady=5, padx=5)
 
 button5 = Button(root, text='OFF', command=onoff5, fg='Red')
-button5.grid(row=2, column=5, pady=5, padx=5)
+button5.grid(row=4, column=5, pady=5, padx=5)
 
 button6 = Button(root, text='OFF', command=onoff6, fg='Red')
-button6.grid(row=2, column=6, pady=5, padx=5)
+button6.grid(row=4, column=6, pady=5, padx=5)
 
 button7 = Button(root, text='OFF', command=onoff7, fg='Red')
-button7.grid(row=2, column=7, pady=5, padx=5)
+button7.grid(row=4, column=7, pady=5, padx=5)
 
 button8 = Button(root, text='OFF', command=onoff8, fg='Red')
-button8.grid(row=2, column=8, pady=5, padx=5)
+button8.grid(row=4, column=8, pady=5, padx=5)
 
 button9 = Button(root, text='OFF', command=onoff9, fg='Red')
-button9.grid(row=6, column=1, pady=5, padx=5)
+button9.grid(row=8, column=1, pady=5, padx=5)
 
 button10 = Button(root, text='OFF', command=onoff10, fg='Red')
-button10.grid(row=6, column=2, pady=5, padx=5)
+button10.grid(row=8, column=2, pady=5, padx=5)
 
 button11 = Button(root, text='OFF', command=onoff11, fg='Red')
-button11.grid(row=6, column=3, pady=5, padx=5)
+button11.grid(row=8, column=3, pady=5, padx=5)
 
 button12 = Button(root, text='OFF', command=onoff12, fg='Red')
-button12.grid(row=6, column=4, pady=5, padx=5)
+button12.grid(row=8, column=4, pady=5, padx=5)
 
 button13 = Button(root, text='OFF', command=onoff13, fg='Red')
-button13.grid(row=6, column=5, pady=5, padx=5)
+button13.grid(row=8, column=5, pady=5, padx=5)
 
 button14 = Button(root, text='OFF', command=onoff14, fg='Red')
-button14.grid(row=6, column=6, pady=5, padx=5)
+button14.grid(row=8, column=6, pady=5, padx=5)
 
 button15 = Button(root, text='OFF', command=onoff15, fg='Red')
-button15.grid(row=6, column=7, pady=5, padx=5)
+button15.grid(row=8, column=7, pady=5, padx=5)
 
 button16 = Button(root, text='OFF', command=onoff16, fg='Red')
-button16.grid(row=6, column=8, pady=5, padx=5)
+button16.grid(row=8, column=8, pady=5, padx=5)
 
 btReady = Button(root, text='READY', command=onoffR, fg='Green')
-btReady.grid(row=10, column=4, pady=5, padx=5)
+btReady.grid(row=12, column=4, pady=5, padx=5)
 
 #define menu 
 
+options = ["Board1","Board2","Board3"]
+clicked = StringVar()
+clicked.set(options[0])
+drop=OptionMenu(root,clicked,*options)
+drop.config(width=9, font=('bold',12))
+drop.grid(row=1, column=1, pady=5, padx=5)
 
 
 #run
