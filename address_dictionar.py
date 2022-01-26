@@ -10,9 +10,9 @@ multiplexor_address = 0x70
 
 i2c_ch_0=0b00000001
 i2c_ch_1=0b00000010
-i2c_ch_2=0b00000011
-i2c_ch_3=0b00000100
-i2c_ch_4=0b00000101
+i2c_ch_2=0b00000100
+i2c_ch_3=0b00001000
+i2c_ch_4=0b00010000
 
 
 bus.write_byte(multiplexor_address,i2c_ch_0) #--> select output from multiplexor 
